@@ -10,10 +10,7 @@ public class HairFactoryTest
 	{
 		// TODO Auto-generated method stub
 		HairInterface hair=HairFactory.getHairByKey("in");
-		hair.draw();
-		
-		
-		
+		hair.draw();						
 	}
 
 }
