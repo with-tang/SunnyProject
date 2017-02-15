@@ -10,6 +10,11 @@ public class FactoryTest
 		boy.say();
 		Girl girl=GirlFactory.getGirl("MCMGirl");
 		girl.say();
+		int n;
+		for( n=0;n<100;n=n*2+1);
+		System.out.println(n);
+		
+
 	}
 
 }
