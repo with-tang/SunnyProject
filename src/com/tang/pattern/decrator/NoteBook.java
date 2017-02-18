@@ -13,9 +13,15 @@ public class NoteBook
 	}
 	public static void main(String[] args)
 	{
+		//组合方式
 		GBTwoPlug two=new GBTwoPlug();
 		ThreePlugIf three= new TwoPlugAdapter(two);
 		NoteBook nb=new NoteBook(three);
+		nb.charge();
+		
+		//继承方式
+		three=new GBTwoPlugExtends();		
+		nb=new NoteBook(three);
 		nb.charge();
 	}
 }
